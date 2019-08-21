@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    ddsdsd
+    huaiyao wang love hongyue yang
   </div>
 </template>
 
