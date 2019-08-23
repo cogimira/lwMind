@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    huaiyao wang love hongyue yang
+    ddd
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import blockly from 'blockly'
 export default {
   name: 'app',
+  methods : {
+
+  },
+  mounted () {
+    console.log(blockly)
+  },
   components: {
-    HelloWorld
+    
   }
 }
 </script>
