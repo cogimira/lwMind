@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import blockly from 'blockly'
+// import blockly from 'blockly'
 export default {
   name: 'app',
   methods : {
