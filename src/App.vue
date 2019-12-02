@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <canvas></canvas>
+    <canvas id="canvas"></canvas>
   </div>
 </template>
 
 <script>
+import {GraphStage} from '../lib/graph-stage';
 export default {
   name: 'app',
   methods : {
 
   },
   mounted () {
+    let canvas = document.getElementById("canvas");
+    canvas.setAttribute("width", document.body.offsetWidth);
+    canvas.setAttribute("height", window.innerHeight);
+    new GraphStage(canvas);
   },
   components: {
     
@@ -25,6 +30,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 </style>
