@@ -12,7 +12,7 @@ export default {
   mounted() {
     let canvas = document.getElementById("canvas");
     canvas.setAttribute("width", document.body.offsetWidth);
-    canvas.setAttribute("height", window.innerHeight);
+    canvas.setAttribute("height", window.innerHeight * 2);
     let appContainer = document.getElementById("app");
     new GraphStage(canvas, { container: appContainer });
   },
