@@ -1,6 +1,6 @@
 <template>
   <div id="app" ref="canvasContainer">
-    <button id="button" @click="toggleFullScreen">全频切换</button>
+    <!-- <button id="button" @click="toggleFullScreen">全频切换</button> -->
     <canvas id="canvas" ref="canvas"> </canvas>
   </div>
 </template>
