@@ -45,6 +45,9 @@ export default {
     }
   },
   mounted() {
+    document.body.addEventListener('touchmove' , function(e){ 
+    e.preventDefault(); 
+});
     let canvas = document.getElementById("canvas");
     canvas.setAttribute("width", document.body.offsetWidth);
     canvas.setAttribute("height", window.innerHeight);
