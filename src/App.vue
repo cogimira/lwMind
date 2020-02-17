@@ -15,34 +15,34 @@ export default {
     };
   },
   methods: {
-    toggleFullScreen() {
-      if (!this.isFullScreen) {
-        if (this.$refs.canvasContainer.requestFullscreen) {
-          this.$refs.canvasContainer.requestFullscreen();
-        } else if (this.$refs.canvasContainer.webkitRequestFullScreen) {
-          this.$refs.canvasContainer.webkitRequestFullScreen();
-        } else if (this.$refs.canvasContainer.mozRequestFullScreen) {
-          this.$refs.canvasContainer.mozRequestFullScreen();
-        } else if (this.$refs.canvasContainer.msRequestFullscreen) {
-          // IE11
-          this.$refs.canvasContainer.msRequestFullscreen();
-        }
-        console.log("已全屏！");
+    // toggleFullScreen() {
+    //   if (!this.isFullScreen) {
+    //     if (this.$refs.canvasContainer.requestFullscreen) {
+    //       this.$refs.canvasContainer.requestFullscreen();
+    //     } else if (this.$refs.canvasContainer.webkitRequestFullScreen) {
+    //       this.$refs.canvasContainer.webkitRequestFullScreen();
+    //     } else if (this.$refs.canvasContainer.mozRequestFullScreen) {
+    //       this.$refs.canvasContainer.mozRequestFullScreen();
+    //     } else if (this.$refs.canvasContainer.msRequestFullscreen) {
+    //       // IE11
+    //       this.$refs.canvasContainer.msRequestFullscreen();
+    //     }
+    //     console.log("已全屏！");
         
-        this.isFullScreen = !this.isFullScreen;
-      } else {
-        if (this.$refs.canvasContainer.exitFullscreen) {
-          this.$refs.canvasContainer.exitFullscreen();
-        } else if (this.$refs.canvasContainer.webkitCancelFullScreen) {
-          this.$refs.canvasContainer.webkitCancelFullScreen();
-        } else if (this.$refs.canvasContainer.mozCancelFullScreen) {
-          this.$refs.canvasContainer.mozCancelFullScreen();
-        } else if (document.msExitFullscreen) {
-          this.$refs.canvasContainer.msExitFullscreen();
-        }
-        this.isFullScreen = !this.isFullScreen;
-      }
-    }
+    //     this.isFullScreen = !this.isFullScreen;
+    //   } else {
+    //     if (this.$refs.canvasContainer.exitFullscreen) {
+    //       this.$refs.canvasContainer.exitFullscreen();
+    //     } else if (this.$refs.canvasContainer.webkitCancelFullScreen) {
+    //       this.$refs.canvasContainer.webkitCancelFullScreen();
+    //     } else if (this.$refs.canvasContainer.mozCancelFullScreen) {
+    //       this.$refs.canvasContainer.mozCancelFullScreen();
+    //     } else if (document.msExitFullscreen) {
+    //       this.$refs.canvasContainer.msExitFullscreen();
+    //     }
+    //     this.isFullScreen = !this.isFullScreen;
+    //   }
+    // }
   },
   mounted() {
     document.body.addEventListener('touchmove' , function(e){ 
