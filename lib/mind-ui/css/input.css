@@ -1,3 +1,10 @@
+input{
+    background:white;  
+    outline:none;  
+    border:none;
+    width: 300px;
+    border-radius:4px;}
+
 #graph-input {
     width: 200px;
     height: 35px;
